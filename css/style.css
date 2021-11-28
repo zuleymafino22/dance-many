@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2? family = Estonia & display = swap');
+
+body{
+   font-family: 'Estonia', cursiva; 
+   margin: 0;
+   padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+header nav{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+header nav .logo{
+    transition: .4s;
+}
+
+header nav .logo:hover{
+    transform: scale(1.1);
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    /* border top me genera un borde superior*/
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 15px 10px;
+    /* define el tiempo de animacion en el efecto hover*/
+    transition: .5s;
+}
+
+/* el efecto hover cuando se pasa el esculsor sobre un elemeto*/
+header nav ul li a:hover{
+    color: yellow;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff; 
+}
+
+header #hero{
+    text-align: center;
+    margin-top: 150px;
+}
+
+header #hero h1{
+    color: yellow;
+    font-size: 50px;
+    margin: 0;
+}
+
+header #hero p{
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+}
+
+header #hero button{
+    text-transform: uppercase;
+    background: yellow;
+    font-size: 35px;
+    color: gray;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+  }
+
+main {
+    width:100%;
+    position: relative;
+}
+   
+main #ritmos{
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main #ritmos .container{
+    /*widith sefine el ancho de un elemento*/
+    /*heigth define el alto de un elemento*/
+    width: 1200px;
+    /*margin: 0auto sirve para centrar un elemento*/
+    margin: 0 auto;
+    /*text- align: alineacion de testos: center,left,right,justifice*/
+    text-align: center;
+}
+
+main #ritmos .container h2{
+    color: #000000;
+    /**/
+    font-size: 40px; 
+}
+
+main #ritmos .container p{
+    color: #000000;
+    font-size: 24px;
+}
+
+main #ritmos .container .fila {
+    /*displey flex sirve para ubicar un elemento junto al otro */
+    display: flex;
+    /* justify cntent sirve para organizar los contenidos de manera horizontal,flex_start=izquierda,
+    flex_end=derecha,center=centro,space=espacios*/
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+main #ritmos .container .fila .col-4{
+    position: relative;
+}
+
+main #ritmos .container .fila .col-4 h3{
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+}
+
+#ciudades {
+    width: 100%;
+    height: 125vh;
+    background: url(../img/bg-destinos.png);
+    background-size: cover;  
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+#ciudades .container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center
+}
+#ciudades .container h4{
+    color: yellow;
+    font-size: 40px;
+    text-align: center
+}
+
+ #ciudades .container p{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+ #ciudades .container .fila{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+ #ciudades .container .fila .col-6{
+    position: relative;
+}
+ #ciudades .container .fila .col-6 h4{
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top:90px;
+    left:0px;
+    right: 0px;
+    bottom: 90px;
+}
+    
+ #destinos .container .fila2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+/* seccion de contacto*/
+main #contacto{
+    background: gray;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+main #contacto .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main #contacto .container h2{
+font-size: 50px;
+}
+
+main #contacto .container p{
+    font-size: 22px;
+}
+
+main #contacto .container form .fila{
+    display:flex;
+    justify-content: center;
+}
+
+main #contacto .container form .fila input{
+    width: 400px;
+    /*margin=margen externa*/
+    /*padding= margen interna*/ 
+    padding: 10px 20px;
+    font-size: 22px;
+    margin: 20px;
+}
+
+main #contacto .container form .fila select{
+    width: 440px;
+    /*margin=margen externa*/
+    /*padding= margen interna*/ 
+    padding: 10px 20px;
+    font-size: 22px;
+    margin: 20px;
+}
+
+main #contacto .container form button{
+    padding: 14px 100px;
+    font-size: 24px;
+    color: #ffffff;
+    background: rgb(59, 59, 12);
+    margin-top: 50px;
+}
+
+footer{
+    background: #000000;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    color: #ffffff;
+    font-size: 22px;
+    /* el efecto hover cuando se pasa el esculsor sobre un elemeto*/
+}
+  
+
+
+
+
+
